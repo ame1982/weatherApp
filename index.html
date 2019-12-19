@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+    td {
+        text-align: center;
+    }
+    .desc {
+        width: 50px;
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Weather forecast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span4 offset3">
+                <h2>Prognoza vremena</h2>
+                <p>Unesite ime grada da biste dobili vremensku prognozu</p>
+            </div>
+            <div class="span6  offset1">
+                <input class="span4" type="text" placeholder="Enter the city name"
+                  id="city-name" value=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 offset1">
+                <br /><input type="button" class="btn-primary btn btn-metric" value="Prognoza u metričkom formatu"/> 
+                <input type="button" class="btn-danger btn btn-imperial" value="Prognoza u imperial formatu"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 offset1">
+                <div id="weather1">Nothing to show yet</div>
+                <div id="log"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
